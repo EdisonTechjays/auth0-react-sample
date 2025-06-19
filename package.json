@@ -1,6 +1,6 @@
 {
   "name": "auth0-react-sample",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "homepage": "https://edisontechjays.github.io/auth0-react-sample",
   "private": true,
   "scripts": {
