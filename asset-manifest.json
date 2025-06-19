@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e79340e1.css",
-    "main.js": "/static/js/main.095ec6d8.js",
-    "static/media/logo.svg": "/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
-    "static/media/loading.svg": "/static/media/loading.330b7d99bfbae8039a5456998d97914f.svg",
-    "index.html": "/index.html",
-    "main.e79340e1.css.map": "/static/css/main.e79340e1.css.map",
-    "main.095ec6d8.js.map": "/static/js/main.095ec6d8.js.map"
+    "main.css": "/EdisonTechjays/auth0-react-sample/static/css/main.e79340e1.css",
+    "main.js": "/EdisonTechjays/auth0-react-sample/static/js/main.f8cd9cea.js",
+    "static/media/logo.svg": "/EdisonTechjays/auth0-react-sample/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "static/media/loading.svg": "/EdisonTechjays/auth0-react-sample/static/media/loading.330b7d99bfbae8039a5456998d97914f.svg",
+    "index.html": "/EdisonTechjays/auth0-react-sample/index.html",
+    "main.e79340e1.css.map": "/EdisonTechjays/auth0-react-sample/static/css/main.e79340e1.css.map",
+    "main.f8cd9cea.js.map": "/EdisonTechjays/auth0-react-sample/static/js/main.f8cd9cea.js.map"
   },
   "entrypoints": [
     "static/css/main.e79340e1.css",
-    "static/js/main.095ec6d8.js"
+    "static/js/main.f8cd9cea.js"
   ]
 }
