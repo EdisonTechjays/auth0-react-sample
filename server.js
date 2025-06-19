@@ -7,6 +7,8 @@ const app = express();
 
 const port = process.env.SERVER_PORT || 3000;
 
+console.log('port', port);
+
 app.use(morgan("dev"));
 
 app.use(
