@@ -17,8 +17,19 @@ app.use(
   })
 );
 
+// Explicitly serve static files from the build directory
+app.use('/static', express.static(join(__dirname, 'build/static')));
 app.use(express.static(join(__dirname, "build")));
 
-app.get('*', (req, res) => res.sendFile(join(__dirname, 'build', 'index.html')));
+// Add logging for static file requests
+app.use((req, res, next) => {
+  console.log(`Requesting: ${req.path}`);
+  next();
+});
+
+app.get('*', (req, res) => {
+  console.log(`Fallback route for: ${req.path}`);
+  res.sendFile(join(__dirname, 'build', 'index.html'));
+});
 
 app.listen(port, () => console.log(`Server listening on port ${port}`));
