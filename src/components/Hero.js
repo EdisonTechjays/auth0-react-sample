@@ -1,9 +1,11 @@
 import React from "react";
-import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
+import userImg from '../assets/user.png';
 
 const Hero = () => {
   const { user } = useAuth0();
+  console.log(user);
   
   return (
     <div className="hero-section py-5">
@@ -16,7 +18,7 @@ const Hero = () => {
                   <div className="mb-4">
                     {user.picture && (
                       <img 
-                        src={user.picture} 
+                        src={userImg} 
                         alt="Profile" 
                         className="rounded-circle mb-3"
                         style={{ width: '80px', height: '80px', objectFit: 'cover' }}
@@ -26,7 +28,7 @@ const Hero = () => {
                       <h2 className="text-primary mb-2">{user.name}</h2>
                     )}
                     <p className="text-muted mb-0">
-                      {user.name ? `Welcome back, ${user.name}` : 'Welcome back'}
+                      Welcome back
                     </p>
                   </div>
                 )}
